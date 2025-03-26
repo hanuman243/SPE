@@ -1,489 +1,578 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 a:visited {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
+/* Header */
 header {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
-  font-family: poppins;
-  height: 150px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5% 6%; /* Adjusted padding for responsiveness */
+    font-family: poppins;
+    height: 10vh; /* Using viewport height for better scaling */
+    min-height: 100px; /* Ensuring a minimum height */
 }
 
 .tabs {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-around; */
-  gap: 100px;
-  padding-right: 100px;
-  font-size: 20px;
-  font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8%; /* Adjusted gap for responsiveness */
+    padding-right: 8%; /* Adjusted padding for responsiveness */
+    font-size: 1.5vw; /* Relative font size */
+    font-weight: 500;
 }
 
 .logoSPE img {
-  height: 150px;
-  width: 185px;
+    height: 8vh; /* Relative height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 185px; /* Limit maximum width */
 }
 
+/* Background Image */
 .background_img {
-  width: 100%;
-  filter: brightness(60%);
-  position: absolute;
+    width: 100%;
+    filter: brightness(60%);
+    position: absolute;
+    z-index: -1; /* Place it behind other content */
 }
 
+/* Home Section Text */
 .text_home {
-  position: relative;
-  /* background:white; */
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  /* font-size: 80px; */
-  font-family: poppins;
-  padding-top: 200px;
-  gap: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: poppins;
+    padding-top: 15vh; /* Adjusted padding */
+    gap: 5vh; /* Adjusted gap */
+    min-height: 80vh; /* Ensure it takes at least 80% of the viewport height */
 }
 
 .spe_title {
-  font-size: 50px;
+    font-size: 3.5vw; /* Relative font size */
 }
 
 .headline {
-  font-size: 130px;
-  font-weight: 550;
+    font-size: 8vw; /* Relative font size */
+    font-weight: 550;
 }
 
 button {
-  font-size: 30px;
-  border-width: 3px;
-  border-radius: 15px;
-  border-style: solid;
-  color: white;
-  border-color: white;
-  background: none;
-  /* padding:5px; */
-  width: 150px;
-  height: 60px;
+    font-size: 2vw; /* Relative font size */
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: solid;
+    color: white;
+    border-color: white;
+    background: none;
+    width: 10vw; /* Relative width */
+    height: 5vh; /* Relative height */
+    min-width: 100px; /* Minimum width */
+    min-height: 40px; /* Minimum height */
 }
 
+/* Team Section */
 .team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-top: 2px solid black;
-  /* margin-top: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid black;
+    padding: 50px 0; /* Added padding */
 }
 
 .team_headline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0; /* Adjusted margin */
 }
 
 .team_headline div:nth-child(1) {
-  font-size: 22px;
-  font-weight: 300px;
+    font-size: 1.5vw; /* Relative font size */
+    font-weight: 300;
 }
 
 .team_headline div:nth-child(2) {
-  font-size: 42px;
-  font-weight: 600px;
+    font-size: 3vw; /* Relative font size */
+    font-weight: 600;
 }
 
 .team_headline div:nth-child(3) {
-  font-size: 22px;
+    font-size: 1.5vw; /* Relative font size */
 }
 
 .team_cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  /* margin-bottom:200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%; /* Adjusted gap */
+    padding: 0 5%; /* Added padding for responsiveness */
+    margin-bottom: 50px; /* Added margin */
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 2px solid gray;
-  border-radius: 35px;
-  width: 400px;
-  height: 400px;
-  gap: 10px;
-  padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 35px;
+    width: 25vw; /* Relative width */
+    max-width: 400px; /* Limit maximum width */
+    height: 25vw; /* Relative height */
+    max-height: 400px; /* Limit maximum height */
+    gap: 10px;
+    padding: 30px 0;
+    margin: 15px; /* Added margin for spacing between cards */
 }
 
 .profile_pic img {
-  height: 250px;
-  width: 100%;
-  object-fit: fill;
-  /* border: 3px solid black; */
-  border-radius: 400px;
+    height: 15vw; /* Relative height */
+    width: 100%;
+    object-fit: cover; /* Use cover to maintain aspect ratio and fill the container */
+    border-radius: 400px;
+    max-height: 250px; /* Limit maximum height */
 }
 
 .cards div:nth-child(2) {
-  font-size: 20px;
-  font-weight: 600;
+    font-size: 1.2vw; /* Relative font size */
+    font-weight: 600;
 }
 
 .social_media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .social_media img {
-  height: 20px;
-  width: 20px;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+    height: 1.5vh; /* Relative height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 20px; /* Limit maximum width */
 }
 
+/* Section 2 */
 #section2 {
-    margin-top:360px;
+    margin-top: 10vh; /* Adjusted margin */
+    padding: 50px 0; /* Added padding */
 }
+
 .event {
-  width: 450px;
-  border-radius: 15px;
-  margin-top: 20px;
+    width: 30vw; /* Relative width */
+    max-width: 450px; /* Limit maximum width */
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
 .headline_events {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: black;
-  /* margin-top:700px; */
-  font-family: poppins;
-  border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: poppins;
+    border-top: 2px solid black;
+    padding: 30px 0; /* Added padding */
 }
 
 #events1 {
-  font-size: 18px;
+    font-size: 1.2vw; /* Relative font size */
 }
 
 #events2 {
-  font-size: 42px;
-  padding-top: 10px;
+    font-size: 3vw; /* Relative font size */
+    padding-top: 10px;
 }
 
+/* Timeline */
 .timeline {
-  position: relative;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 15px 0;
-  /* margin-top:850px; */
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
 }
 
 .timeline::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  background: #767776;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: #767776;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
 }
 
 .container {
-  padding: 15px 30px;
-  position: relative;
-  background: inherit;
-  width: 50%;
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
 }
 
 .container.left {
-  left: 0;
+    left: 0;
 }
 
 .container.right {
-  left: 50%;
+    left: 50%;
 }
 
 .container::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: calc(50% - 8px);
-  right: -8px;
-  background: #ffffff;
-  border: 2px solid #767776;
-  border-radius: 16px;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #767776;
+    border-radius: 16px;
+    z-index: 1;
 }
 
 .container.right::after {
-  left: -8px;
+    left: -8px;
 }
 
 .container::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  top: calc(50% - 1px);
-  right: 8px;
-  background: #767776;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #767776;
+    z-index: 1;
 }
 
 .container.right::before {
-  left: 8px;
+    left: 8px;
 }
 
 .container .date {
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 8px);
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #767776;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 1;
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 0.9vw; /* Relative font size */
+    font-weight: bold;
+    color: #767776;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
 }
 
 .container.left .date {
-  right: -135px;
+    right: -135px;
 }
 
 .container.right .date {
-  left: -135px;
+    left: -135px;
 }
 
 .container .icon {
-  position: absolute;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: 9px 0;
-  top: calc(50% - 20px);
-  background: #ece7e7;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 18px;
-  color: #ece7e7;
-  z-index: 1;
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    background: #ece7e7;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1.2vw; /* Relative font size */
+    color: #ece7e7;
+    z-index: 1;
 }
 
 .container.left .icon {
-  right: 56px;
+    right: 56px;
 }
 
 .container.right .icon {
-  left: 56px;
+    left: 56px;
 }
 
 .container .content {
-  padding: 30px 30px 30px 30px;
-  background: #145792;
-
-  position: relative;
-  border-radius: 30px;
+    padding: 20px 30px; /* Reduced padding */
+    background: #145792;
+    position: relative;
+    border-radius: 20px; /* Reduced border-radius */
 }
 
 .container.right .content {
-  padding: 30px 30px 30px 30px;
-  border-radius: 30px;
+    padding: 20px 30px; /* Reduced padding */
+    border-radius: 20px; /* Reduced border-radius */
 }
 
 .container .content h2 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-  font-weight: 600px;
-  /* font-weight: normal; */
-  color: rgb(222, 222, 222);
+    margin: 0 0 10px 0;
+    font-size: 1.4vw; /* Relative font size */
+    font-weight: 600;
+    color: rgb(222, 222, 222);
 }
 
 .container .content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: rgb(222, 222, 222);
+    margin: 0;
+    font-size: 1vw; /* Relative font size */
+    line-height: 1.5; /* Adjusted line-height */
+    color: rgb(222, 222, 222);
 }
 
 @media (max-width: 767.98px) {
-  .timeline::after {
-    left: 90px;
-  }
+    .timeline::after {
+        left: 90px;
+    }
 
-  .container {
-    width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-  }
+    .container {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
 
-  .container.right {
-    left: 0%;
-  }
+    .container.right {
+        left: 0%;
+    }
 
-  .container.left::after,
-  .container.right::after {
-    left: 82px;
-  }
+    .container.left::after,
+    .container.right::after {
+        left: 82px;
+    }
 
-  .container.left::before,
-  .container.right::before {
-    left: 100px;
-    border-color: transparent #767776 transparent transparent;
-  }
+    .container.left::before,
+    .container.right::before {
+        left: 100px;
+        border-color: transparent #767776 transparent transparent;
+    }
 
-  .container.left .date,
-  .container.right .date {
-    right: auto;
-    left: 15px;
-  }
+    .container.left .date,
+    .container.right .date {
+        right: auto;
+        left: 15px;
+    }
 
-  .container.left .icon,
-  .container.right .icon {
-    right: auto;
-    left: 146px;
-  }
+    .container.left .icon,
+    .container.right .icon {
+        right: auto;
+        left: 146px;
+    }
 
-  .container.left .content,
-  .container.right .content {
-    padding: 30px 30px 30px 30px;
-    border-radius: 500px 0 0 500px;
-  }
+    .container.left .content,
+    .container.right .content {
+        padding: 30px 30px 30px 30px;
+        border-radius: 500px 0 0 500px;
+    }
 }
+
+/* Section 3 */
 #section3 {
-  width: 100%;
-  background-color: rgba(0, 75, 152, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  padding: 20px 0;
-  height: 400px;
-  column-gap: 20px;
+    width: 100%;
+    background-color: rgba(0, 75, 152, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 30px 0; /* Adjusted padding */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 5vh 0; /* Using viewport height for padding */
+    column-gap: 20px;
 }
 
 #join1 {
-  font-size: 52px;
-  padding: 10px 0;
+    font-size: 4vw; /* Relative font size */
+    padding: 10px 0;
 }
 
 #join2 {
-  font-size: 22px;
-  padding: 10px 0;
+    font-size: 1.5vw; /* Relative font size */
+    padding: 10px 0;
 }
 
 #join3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
-  padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 0;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 .join_now {
-  /* padding:15px; */
-  width: 180px;
+    width: 12vw; /* Relative width */
+    max-width: 180px; /* Limit maximum width */
+    margin: 10px; /* Add margin for spacing */
 }
 
 .learn_more {
-  width: 210px;
+    width: 14vw; /* Relative width */
+    max-width: 210px; /* Limit maximum width */
+    margin: 10px; /* Add margin for spacing */
 }
 
+/* Footer */
 footer {
-  display: flex;
-  justify-content: ;
-  align-items: flex-start;
-  gap: 350px;
-  background-color: rgba(0, 75, 152, 255);
-  height: 400px;
-  margin-top: 100px;
-  padding: 0 100px;
-  color: rgb(237, 233, 233);
+    display: flex;
+    justify-content: space-between; /* Distribute content */
+    align-items: flex-start;
+    gap: 2%; /* Adjusted gap */
+    background-color: rgba(0, 75, 152, 255);
+    padding: 3% 6%; /* Adjusted padding */
+    color: rgb(237, 233, 233);
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    padding-bottom: 30px; /* Add bottom padding */
 }
 
 .footer1 {
-  display: flex;
-  /* justify-content:space-evenly; */
-  /* align-items: center; */
-  flex-direction: column;
-  gap: 50px;
-  padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Adjusted gap */
+    padding: 0; /* Remove padding */
 }
 
 .footer1 img {
-  height: 50px;
-  width: 50px;
+    height: 4vh; /* Relative height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 50px; /* Limit maximum width */
 }
 
 .contact {
-  display: flex;
-  /* justify-content:flex-start ; */
-  align-items: left;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjusted gap */
 }
 
 .details_contact {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  flex-direction: column;
-  width: 520px;
+    display: flex;
+    flex-direction: column;
+    width: auto; /* Allow width to adjust */
+    max-width: 520px; /* Limit maximum width */
 }
 
 .details {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjusted gap */
+    margin-bottom: 5px; /* Add some spacing between contact details */
 }
 
 .follow {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .details_follow {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusted gap */
 }
 
 .usefulLinks {
-  padding: 30px 0;
+    padding: 0; /* Remove padding */
 }
+
 .copyright {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure it spans the full width */
+    padding-top: 20px; /* Add some top padding */
+    font-size: 0.8vw; /* Relative font size */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 3% 4%;
+        height: auto;
+    }
+
+    .tabs {
+        gap: 20px;
+        padding-right: 4%;
+    }
+
+    .logoSPE img {
+        height: 60px;
+        max-width: 150px;
+    }
+
+    .text_home {
+        padding-top: 100px;
+    }
+
+    .spe_title {
+        font-size: 28px;
+    }
+
+    .headline {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 18px;
+        width: 120px;
+        height: 50px;
+    }
+
+    .team_cards {
+        gap: 25px;
+        padding: 0 4%;
+    }
+
+    .cards {
+        width: 80%;
+        height: auto;
+        max-width: 500px;
+        max-height: none;
+        padding:
+It appears you're asking how to adjust the CSS code you provided so that the website layout and elements fit correctly when the user has their browser zoomed to 100%, as opposed to fitting at 67%.
+
+The primary way to achieve this is to **ensure your CSS uses relative units** for sizing and spacing, rather than fixed pixel values. Relative units scale with the user's zoom level.
+
+Here's a breakdown of the CSS you provided and suggestions for making it more zoom-level-friendly:
+
+**General Principles:**
+
+* **Use `em`, `rem`, and `%` for sizing:**
+    * `em`: Relative to the font size of the element itself.
+    * `rem`: Relative to the font size of the root HTML element (usually 16px by default).
+    * `%`: Relative to the parent element's size.
+* **Use `vw` and `vh` for viewport-based units:**
+    * `vw`: 1% of the viewport width.
+    * `vh`: 1% of the viewport height.
+* **Avoid fixed `px` values for most dimensions and spacing.**
+
+**Specific Code Adjustments:**
+
+Let's go through the provided CSS and suggest potential changes:
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
 }
